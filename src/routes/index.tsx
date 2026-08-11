@@ -162,7 +162,7 @@ function Home() {
               key={project.name}
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:-translate-y-1 hover:border-primary/60"
             >
-              <div className="flex h-40 items-center justify-center bg-ubuntu/10">
+              <div className="flex h-40 items-center justify-center bg-accent/10">
                 <span className="font-display text-4xl font-bold text-primary/40">
                   {project.name.charAt(0)}
                 </span>
