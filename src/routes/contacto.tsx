@@ -152,7 +152,7 @@ function ContactoPage() {
 
           <button
             type="submit"
-            className="mt-7 w-full rounded-full bg-ubuntu px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ubuntu transition-transform hover:-translate-y-0.5"
+            className="mt-7 w-full rounded-full bg-ubuntu px-7 py-3.5 text-sm font-semibold text-accent-foreground shadow-ubuntu transition-transform hover:-translate-y-0.5"
           >
             Enviar pedido
           </button>
