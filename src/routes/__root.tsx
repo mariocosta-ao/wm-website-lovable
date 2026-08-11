@@ -80,17 +80,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nukanda Tec — Tecnologia que move o seu negócio" },
+      { title: "Mukanda Tec — Inovamos e crescemos juntos" },
       {
         name: "description",
         content:
-          "Desenvolvimento web, software à medida, apps móveis e identidade visual para empresas em Angola.",
+          "Web, branding, redes e segurança para organizações angolanas. Construímos soluções integradas com excelência técnica.",
       },
-      { name: "author", content: "Nukanda Tec" },
-      { property: "og:title", content: "Nukanda Tec" },
+      { name: "author", content: "Mukanda Tec" },
+      { property: "og:title", content: "Mukanda Tec" },
       {
         property: "og:description",
-        content: "Soluções digitais completas para empresas angolanas.",
+        content: "Soluções tecnológicas integradas para organizações angolanas.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -104,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Lato:wght@400;700;900&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],

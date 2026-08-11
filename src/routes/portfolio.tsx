@@ -6,16 +6,16 @@ import { projects } from "@/lib/site";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfólio — Projetos da Nukanda Tec" },
+      { title: "Portfólio — Projetos da Mukanda Tec" },
       {
         name: "description",
         content:
-          "Sites, plataformas e aplicações desenvolvidas pela Nukanda Tec para empresas em Angola: e-commerce, saúde, logística e media.",
+          "Sites, plataformas e aplicações desenvolvidas pela Mukanda Tec para empresas em Angola: e-commerce, saúde, logística e media.",
       },
-      { property: "og:title", content: "Portfólio — Nukanda Tec" },
+      { property: "og:title", content: "Portfólio — Mukanda Tec" },
       {
         property: "og:description",
-        content: "Conheça projetos digitais construídos pela Nukanda Tec e os resultados alcançados.",
+        content: "Conheça projetos digitais construídos pela Mukanda Tec e os resultados alcançados.",
       },
     ],
   }),
@@ -37,7 +37,7 @@ function PortfolioPage() {
               key={project.name}
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:-translate-y-1 hover:border-primary/60"
             >
-              <div className="flex h-44 items-center justify-center bg-ember/10">
+              <div className="flex h-44 items-center justify-center bg-accent/10">
                 <span className="font-display text-5xl font-bold text-primary/40">
                   {project.name.charAt(0)}
                 </span>

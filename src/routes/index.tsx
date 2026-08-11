@@ -9,17 +9,17 @@ import { services, processSteps, stats, projects, testimonials, skills } from "@
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nukanda Tec — Desenvolvimento Web e Software em Angola" },
+      { title: "Mukanda Tec — Inovamos e crescemos juntos" },
       {
         name: "description",
         content:
-          "Sites, sistemas e apps à medida para empresas angolanas. Design, engenharia e suporte dedicado pela Nukanda Tec, em Luanda.",
+          "Web, sistemas, branding, redes e segurança para organizações angolanas. Construímos com excelência técnica e acompanhamos depois da entrega.",
       },
-      { property: "og:title", content: "Nukanda Tec — Tecnologia que move o seu negócio" },
+      { property: "og:title", content: "Mukanda Tec — Inovamos e crescemos juntos" },
       {
         property: "og:description",
         content:
-          "Desenvolvimento web, software à medida, apps móveis e identidade visual para empresas em Angola.",
+          "Soluções tecnológicas integradas para organizações angolanas: web, branding, redes e segurança.",
       },
     ],
   }),
@@ -52,7 +52,7 @@ function Home() {
           <div className="relative">
             <img
               src={aboutImage}
-              alt="Equipa da Nukanda Tec em reunião de projeto"
+              alt="Equipa da Mukanda Tec em reunião de projeto"
               loading="lazy"
               width={1200}
               height={1408}
@@ -69,10 +69,11 @@ function Home() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Sobre nós"
-              title="Parceiros técnicos do seu crescimento"
-              description="A Nukanda Tec nasceu para aproximar as empresas angolanas de tecnologia de nível internacional — sem jargão, sem promessas vazias e com entregas que resistem ao dia a dia."
+              eyebrow="Quem somos"
+              title="Ubuntu: sou porque somos"
+              description="Somos uma equipa angolana que acredita no crescimento coletivo. Trabalhamos lado a lado com cada organização, explicamos cada decisão técnica e entregamos soluções que aguentam o dia a dia."
             />
+
             <div className="mt-8 space-y-5">
               {skills.map((skill) => (
                 <div key={skill.label}>
@@ -81,7 +82,7 @@ function Home() {
                     <span className="text-primary">{skill.value}%</span>
                   </div>
                   <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                    <div className="h-full rounded-full bg-ember" style={{ width: `${skill.value}%` }} />
+                    <div className="h-full rounded-full bg-primary" style={{ width: `${skill.value}%` }} />
                   </div>
                 </div>
               ))}
@@ -162,7 +163,7 @@ function Home() {
               key={project.name}
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:-translate-y-1 hover:border-primary/60"
             >
-              <div className="flex h-40 items-center justify-center bg-ember/10">
+              <div className="flex h-40 items-center justify-center bg-accent/10">
                 <span className="font-display text-4xl font-bold text-primary/40">
                   {project.name.charAt(0)}
                 </span>
@@ -192,7 +193,7 @@ function Home() {
         <div className="grid gap-8 rounded-3xl border border-border bg-card px-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="font-display text-4xl font-bold text-ember">{stat.value}</p>
+              <p className="font-display text-4xl font-bold text-ubuntu">{stat.value}</p>
               <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
             </div>
           ))}
