@@ -9,17 +9,17 @@ import { services, processSteps, stats, projects, testimonials, skills } from "@
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mukanda Tec — Desenvolvimento Web e Software em Angola" },
+      { title: "Mukanda Tec — Inovamos e crescemos juntos" },
       {
         name: "description",
         content:
-          "Sites, sistemas e apps à medida para empresas angolanas. Design, engenharia e suporte dedicado pela Mukanda Tec, em Luanda.",
+          "Web, sistemas, branding, redes e segurança para organizações angolanas. Construímos com excelência técnica e acompanhamos depois da entrega.",
       },
-      { property: "og:title", content: "Mukanda Tec — Tecnologia que move o seu negócio" },
+      { property: "og:title", content: "Mukanda Tec — Inovamos e crescemos juntos" },
       {
         property: "og:description",
         content:
-          "Desenvolvimento web, software à medida, apps móveis e identidade visual para empresas em Angola.",
+          "Soluções tecnológicas integradas para organizações angolanas: web, branding, redes e segurança.",
       },
     ],
   }),
