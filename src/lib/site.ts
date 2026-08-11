@@ -1,10 +1,11 @@
 export const site = {
   name: "Mukanda Tec",
-  tagline: "Tecnologia que move negócios em Angola",
+  slogan: "Inovamos e crescemos juntos",
+  tagline: "Soluções tecnológicas integradas para organizações angolanas",
   phone: "+244 922 570 275",
   phoneRaw: "+244922570275",
   whatsapp:
-    "https://wa.me/244922570275?text=Ol%C3%A1%20Mukanda%20Tec!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento.",
+    "https://wa.me/244922570275?text=Ol%C3%A1%20Mukanda%20Tec!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20projeto.",
   email: "geral@mukandatec.co.ao",
   location: "Luanda, Angola",
 };
@@ -13,68 +14,68 @@ export const services = [
   {
     title: "Desenvolvimento Web",
     description:
-      "Sites institucionais, e-commerce e plataformas sob medida, rápidos, seguros e responsivos.",
+      "Construímos sites, plataformas e lojas online rápidas, seguras e fáceis de gerir pela sua equipa.",
     highlight: true,
   },
   {
-    title: "Software à Medida",
+    title: "Sistemas à Medida",
     description:
-      "Sistemas de gestão, dashboards e automações que resolvem problemas reais da sua operação.",
+      "Desenhamos sistemas de gestão e automações que resolvem processos concretos da sua operação.",
   },
   {
-    title: "Apps Móveis",
+    title: "Branding & Identidade",
     description:
-      "Aplicações Android e iOS com experiência fluida, integradas aos seus sistemas existentes.",
+      "Criamos logótipo, paleta e manual de marca que traduzem o carácter da sua organização.",
   },
   {
-    title: "Identidade Visual",
+    title: "Redes & Infraestrutura",
     description:
-      "Logótipo, paleta e manual de marca que traduzem o carácter do seu negócio com consistência.",
+      "Instalamos e mantemos redes, servidores e e-mails corporativos com acompanhamento próximo.",
   },
   {
-    title: "Infraestrutura & Cloud",
+    title: "Segurança Informática",
     description:
-      "Alojamento, e-mails corporativos, domínios e manutenção contínua com suporte dedicado.",
+      "Protegemos dados e acessos com cópias de segurança, monitorização e boas práticas aplicadas ao dia a dia.",
   },
   {
-    title: "Marketing Digital",
+    title: "Suporte & Formação",
     description:
-      "SEO, redes sociais e campanhas pagas orientadas por dados para gerar procura qualificada.",
+      "Acompanhamos a sua equipa depois da entrega e formamos quem usa a solução todos os dias.",
   },
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Diagnóstico",
+    title: "Escutamos",
     description:
-      "Ouvimos o seu negócio, mapeamos objetivos e público-alvo, e definimos a estratégia certa.",
+      "Reunimos consigo, mapeamos objetivos e percebemos o contexto real da organização.",
   },
   {
     step: "02",
-    title: "Design & Protótipo",
+    title: "Desenhamos",
     description:
-      "Desenhamos a interface e validamos consigo cada ecrã antes de escrever uma linha de código.",
+      "Estruturamos a solução e validamos consigo cada ecrã antes de avançar para a construção.",
   },
   {
     step: "03",
-    title: "Engenharia",
+    title: "Construímos",
     description:
-      "Construímos com tecnologia moderna, focados em performance, segurança e escalabilidade.",
+      "Desenvolvemos com tecnologia atual, focados em desempenho, segurança e crescimento.",
   },
   {
     step: "04",
-    title: "Lançamento & Suporte",
+    title: "Crescemos juntos",
     description:
-      "Colocamos no ar, medimos resultados e acompanhamos com suporte dedicado pós-entrega.",
+      "Colocamos no ar, medimos resultados e mantemos o acompanhamento depois da entrega.",
   },
 ];
 
 export const stats = [
   { value: "40+", label: "Projetos entregues" },
-  { value: "30+", label: "Clientes satisfeitos" },
+  { value: "30+", label: "Organizações parceiras" },
   { value: "6+", label: "Anos de experiência" },
-  { value: "100%", label: "Dedicação total" },
+  { value: "100%", label: "Compromisso com o cliente" },
 ];
 
 export const projects = [
@@ -101,21 +102,21 @@ export const testimonials = [
   },
   {
     quote:
-      "O sistema de gestão que desenvolveram poupa-nos horas por semana. Suporte impecável.",
+      "O sistema de gestão que desenvolveram poupa-nos horas por semana. O suporte responde sempre.",
     author: "Ana Bumba",
     role: "Gestora, Muxima Clinic",
   },
   {
     quote:
-      "Perceberam a nossa marca melhor do que nós. A nova identidade visual mudou a perceção dos clientes.",
+      "Perceberam a nossa marca melhor do que nós. A nova identidade mudou a perceção dos clientes.",
     author: "Paulo Cardoso",
     role: "Fundador, Sanzala Media",
   },
 ];
 
 export const skills = [
-  { label: "Desenvolvimento Web & Software", value: 96 },
-  { label: "Aplicações Móveis", value: 88 },
-  { label: "Identidade Visual & Branding", value: 84 },
-  { label: "Cloud, Infraestrutura & Suporte", value: 91 },
+  { label: "Desenvolvimento web e sistemas", value: 96 },
+  { label: "Branding e identidade visual", value: 88 },
+  { label: "Redes e infraestrutura", value: 91 },
+  { label: "Segurança informática", value: 84 },
 ];
