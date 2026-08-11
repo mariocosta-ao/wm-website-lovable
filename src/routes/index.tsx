@@ -31,7 +31,7 @@ function Home() {
     <>
       <Hero />
 
-      <Section className="!py-12 border-y border-border bg-surface/40">
+      <Section className="py-12 md:py-14 border-y border-border bg-surface/40">
         <p className="text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">
           Tecnologias que dominamos
         </p>
