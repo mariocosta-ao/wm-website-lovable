@@ -82,7 +82,7 @@ function Home() {
                     <span className="text-primary">{skill.value}%</span>
                   </div>
                   <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                    <div className="h-full rounded-full bg-ubuntu" style={{ width: `${skill.value}%` }} />
+                    <div className="h-full rounded-full bg-primary" style={{ width: `${skill.value}%` }} />
                   </div>
                 </div>
               ))}
