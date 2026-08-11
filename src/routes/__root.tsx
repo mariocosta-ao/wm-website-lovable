@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nukanda Tec — Tecnologia que move o seu negócio" },
+      { title: "Mukanda Tec — Tecnologia que move o seu negócio" },
       {
         name: "description",
         content:
           "Desenvolvimento web, software à medida, apps móveis e identidade visual para empresas em Angola.",
       },
-      { name: "author", content: "Nukanda Tec" },
-      { property: "og:title", content: "Nukanda Tec" },
+      { name: "author", content: "Mukanda Tec" },
+      { property: "og:title", content: "Mukanda Tec" },
       {
         property: "og:description",
         content: "Soluções digitais completas para empresas angolanas.",

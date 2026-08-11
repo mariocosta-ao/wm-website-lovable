@@ -29,7 +29,7 @@ export function CtaBand() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Link
               to="/contacto"
-              className="inline-flex items-center gap-2 rounded-full bg-ember px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ember transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full bg-ubuntu px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ubuntu transition-transform hover:-translate-y-0.5"
             >
               Solicitar orçamento <ArrowRight className="size-4" />
             </Link>

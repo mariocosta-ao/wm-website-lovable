@@ -7,17 +7,17 @@ import { services, processSteps } from "@/lib/site";
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — Nukanda Tec | Web, Software e Apps em Angola" },
+      { title: "Serviços — Mukanda Tec | Web, Software e Apps em Angola" },
       {
         name: "description",
         content:
           "Desenvolvimento web, software à medida, apps móveis, identidade visual, cloud e marketing digital para empresas em Angola.",
       },
-      { property: "og:title", content: "Serviços — Nukanda Tec" },
+      { property: "og:title", content: "Serviços — Mukanda Tec" },
       {
         property: "og:description",
         content:
-          "Do desenvolvimento web ao software à medida: conheça as soluções da Nukanda Tec para o seu negócio.",
+          "Do desenvolvimento web ao software à medida: conheça as soluções da Mukanda Tec para o seu negócio.",
       },
     ],
   }),

@@ -17,18 +17,18 @@ export function Hero() {
           </span>
 
           <h1 className="mt-5 text-4xl font-bold leading-[1.05] md:text-6xl">
-            Tecnologia que <span className="text-ember">move</span> o seu negócio
+            Tecnologia que <span className="text-ubuntu">move</span> o seu negócio
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            A Nukanda Tec desenha, constrói e mantém sites, sistemas e aplicações à medida — com
+            A Mukanda Tec desenha, constrói e mantém sites, sistemas e aplicações à medida — com
             engenharia sólida, design cuidado e suporte que não desaparece depois da entrega.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
             <Link
               to="/contacto"
-              className="inline-flex items-center gap-2 rounded-full bg-ember px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ember transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full bg-ubuntu px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ubuntu transition-transform hover:-translate-y-0.5"
             >
               Solicitar orçamento <ArrowRight className="size-4" />
             </Link>
@@ -60,7 +60,7 @@ export function Hero() {
           <div className="overflow-hidden rounded-3xl border border-border shadow-panel">
             <img
               src={heroImage}
-              alt="Equipa da Nukanda Tec a desenvolver software num escritório em Luanda"
+              alt="Equipa da Mukanda Tec a desenvolver software num escritório em Luanda"
               width={1600}
               height={1200}
               className="h-full w-full object-cover"

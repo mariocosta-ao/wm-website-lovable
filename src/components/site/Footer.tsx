@@ -10,7 +10,7 @@ export function Footer() {
         <div className="md:col-span-2 md:pr-10">
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            A Nukanda Tec constrói produtos digitais sólidos para empresas angolanas — da primeira
+            A Mukanda Tec constrói produtos digitais sólidos para empresas angolanas — da primeira
             linha de código ao suporte do dia a dia.
           </p>
           <div className="mt-6 space-y-2 text-sm text-muted-foreground">
@@ -83,7 +83,7 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Nukanda Tec. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Mukanda Tec. Todos os direitos reservados.</p>
           <p>Feito em Luanda, para o mundo.</p>
         </div>
       </div>

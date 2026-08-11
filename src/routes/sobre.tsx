@@ -7,13 +7,13 @@ import { stats, skills } from "@/lib/site";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre a Nukanda Tec — Equipa técnica em Luanda" },
+      { title: "Sobre a Mukanda Tec — Equipa técnica em Luanda" },
       {
         name: "description",
         content:
-          "Conheça a Nukanda Tec: missão, valores e a equipa que constrói produtos digitais sólidos para empresas angolanas.",
+          "Conheça a Mukanda Tec: missão, valores e a equipa que constrói produtos digitais sólidos para empresas angolanas.",
       },
-      { property: "og:title", content: "Sobre a Nukanda Tec" },
+      { property: "og:title", content: "Sobre a Mukanda Tec" },
       {
         property: "og:description",
         content:
@@ -52,7 +52,7 @@ function SobrePage() {
               align="left"
               eyebrow="Sobre nós"
               title="Construímos tecnologia com raiz angolana"
-              description="A Nukanda Tec reúne programadores, designers e especialistas de infraestrutura que acreditam que qualquer empresa — grande ou pequena — merece software de qualidade internacional."
+              description="A Mukanda Tec reúne programadores, designers e especialistas de infraestrutura que acreditam que qualquer empresa — grande ou pequena — merece software de qualidade internacional."
             />
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
               Começámos com projetos pequenos e crescemos pela recomendação dos clientes. Hoje
@@ -67,7 +67,7 @@ function SobrePage() {
                     <span className="text-primary">{skill.value}%</span>
                   </div>
                   <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                    <div className="h-full rounded-full bg-ember" style={{ width: `${skill.value}%` }} />
+                    <div className="h-full rounded-full bg-ubuntu" style={{ width: `${skill.value}%` }} />
                   </div>
                 </div>
               ))}
@@ -76,7 +76,7 @@ function SobrePage() {
 
           <img
             src={aboutImage}
-            alt="Equipa da Nukanda Tec a trabalhar num projeto"
+            alt="Equipa da Mukanda Tec a trabalhar num projeto"
             loading="lazy"
             width={1200}
             height={1408}
@@ -103,7 +103,7 @@ function SobrePage() {
         <div className="grid gap-8 rounded-3xl border border-border bg-card px-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="font-display text-4xl font-bold text-ember">{stat.value}</p>
+              <p className="font-display text-4xl font-bold text-ubuntu">{stat.value}</p>
               <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
             </div>
           ))}

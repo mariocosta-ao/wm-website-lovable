@@ -7,16 +7,16 @@ import { site, services } from "@/lib/site";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto — Nukanda Tec | Peça o seu orçamento" },
+      { title: "Contacto — Mukanda Tec | Peça o seu orçamento" },
       {
         name: "description",
         content:
-          "Fale com a Nukanda Tec em Luanda. Orçamento gratuito para sites, software à medida, apps e identidade visual. Resposta em 24 horas.",
+          "Fale com a Mukanda Tec em Luanda. Orçamento gratuito para sites, software à medida, apps e identidade visual. Resposta em 24 horas.",
       },
-      { property: "og:title", content: "Contacto — Nukanda Tec" },
+      { property: "og:title", content: "Contacto — Mukanda Tec" },
       {
         property: "og:description",
-        content: "Peça um orçamento sem compromisso à Nukanda Tec. Resposta em menos de 24 horas.",
+        content: "Peça um orçamento sem compromisso à Mukanda Tec. Resposta em menos de 24 horas.",
       },
     ],
   }),
@@ -152,7 +152,7 @@ function ContactoPage() {
 
           <button
             type="submit"
-            className="mt-7 w-full rounded-full bg-ember px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ember transition-transform hover:-translate-y-0.5"
+            className="mt-7 w-full rounded-full bg-ubuntu px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-ubuntu transition-transform hover:-translate-y-0.5"
           >
             Enviar pedido
           </button>

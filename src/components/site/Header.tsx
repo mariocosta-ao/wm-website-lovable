@@ -46,7 +46,7 @@ export function Header() {
           </a>
           <Link
             to="/contacto"
-            className="rounded-full bg-ember px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+            className="rounded-full bg-ubuntu px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             Pedir orçamento
           </Link>
@@ -82,7 +82,7 @@ export function Header() {
             href={site.whatsapp}
             target="_blank"
             rel="noreferrer"
-            className="mt-3 block rounded-full bg-ember px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
+            className="mt-3 block rounded-full bg-ubuntu px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
           >
             Falar no WhatsApp
           </a>

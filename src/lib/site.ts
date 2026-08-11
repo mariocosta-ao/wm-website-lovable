@@ -1,11 +1,11 @@
 export const site = {
-  name: "Nukanda Tec",
+  name: "Mukanda Tec",
   tagline: "Tecnologia que move negócios em Angola",
   phone: "+244 922 570 275",
   phoneRaw: "+244922570275",
   whatsapp:
-    "https://wa.me/244922570275?text=Ol%C3%A1%20Nukanda%20Tec!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento.",
-  email: "geral@nukandatec.com",
+    "https://wa.me/244922570275?text=Ol%C3%A1%20Mukanda%20Tec!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento.",
+  email: "geral@mukandatec.co.ao",
   location: "Luanda, Angola",
 };
 
@@ -89,7 +89,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "A Nukanda Tec entregou muito mais do que um site: entregou uma operação digital que funciona todos os dias.",
+      "A Mukanda Tec entregou muito mais do que um site: entregou uma operação digital que funciona todos os dias.",
     author: "Mariana Kiala",
     role: "Diretora, Kianda Store",
   },
