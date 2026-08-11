@@ -69,10 +69,11 @@ function Home() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Sobre nós"
-              title="Parceiros técnicos do seu crescimento"
-              description="A Mukanda Tec nasceu para aproximar as empresas angolanas de tecnologia de nível internacional — sem jargão, sem promessas vazias e com entregas que resistem ao dia a dia."
+              eyebrow="Quem somos"
+              title="Ubuntu: sou porque somos"
+              description="Somos uma equipa angolana que acredita no crescimento coletivo. Trabalhamos lado a lado com cada organização, explicamos cada decisão técnica e entregamos soluções que aguentam o dia a dia."
             />
+
             <div className="mt-8 space-y-5">
               {skills.map((skill) => (
                 <div key={skill.label}>
