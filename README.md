@@ -1,7 +1,7 @@
-# Nukanda Tec Digital Hub
+# Mukanda Tec Digital Hub
 
 Site de referencia: https://proletariodigital.com
-Faça um site como esse adapdato a identidade visual da Nukanda Tec
+Faça um site como esse adapdato a identidade visual da Mukanda Tec
 
 This project was built with [Lovable](https://lovable.dev).
 
