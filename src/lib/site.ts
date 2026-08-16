@@ -1,122 +1,270 @@
 export const site = {
-  name: "Mukanda Tec",
-  slogan: "Inovamos e crescemos juntos",
-  tagline: "Soluções tecnológicas integradas para organizações angolanas",
-  phone: "+244 922 570 275",
-  phoneRaw: "+244922570275",
+  name: "WIN MAC",
+  legalName: "WIN MAC — Tecnologia e Comércio Geral",
+  slogan: "Deixe-nos cuidar da sua tecnologia",
+  tagline:
+    "Serviços de TIC, licenciamento de software e climatização para empresas em Angola",
+  phone: "+244 942 663 026",
+  phoneRaw: "+244942663026",
+  phoneAlt: "+244 947 018 079",
+  phoneAltRaw: "+244947018079",
   whatsapp:
-    "https://wa.me/244922570275?text=Ol%C3%A1%20Mukanda%20Tec!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20um%20projeto.",
-  email: "geral@mukandatec.co.ao",
-  location: "Luanda, Angola",
+    "https://wa.me/244942663026?text=Ol%C3%A1%20WIN%20MAC!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20os%20vossos%20servi%C3%A7os.",
+  email: "geral@win-mac.net",
+  address: "Talatona, Estrada Lar do Patriota, Edifício Patriota Prime, 3.º Andar",
+  city: "Luanda, Angola",
+  facebook: "https://www.facebook.com/winmac.lda/",
+  instagram: "https://www.instagram.com/winmac.lda/",
+  founded: "2018",
+  url: "https://win-mac.net",
 };
 
 export const services = [
   {
-    title: "Desenvolvimento Web",
+    slug: "help-desk",
+    title: "Help Desk",
     description:
-      "Construímos sites, plataformas e lojas online rápidas, seguras e fáceis de gerir pela sua equipa.",
+      "Equipa especializada disponível em horários flexíveis para dar suporte e resolver problemas técnicos do seu dia a dia.",
     highlight: true,
+    deliverables: [
+      "Suporte remoto e presencial",
+      "Atendimento a utilizadores finais",
+      "Registo e acompanhamento de ocorrências",
+    ],
   },
   {
-    title: "Sistemas à Medida",
+    slug: "manutencao-preventiva",
+    title: "Manutenção preventiva",
     description:
-      "Desenhamos sistemas de gestão e automações que resolvem processos concretos da sua operação.",
+      "Limpeza e revisão periódica de hardware e software para prolongar a vida útil dos equipamentos e evitar falhas.",
+    deliverables: [
+      "Plano de manutenção calendarizado",
+      "Diagnóstico de desempenho",
+      "Relatório do estado dos equipamentos",
+    ],
   },
   {
-    title: "Branding & Identidade",
+    slug: "manutencao-correctiva",
+    title: "Manutenção correctiva",
     description:
-      "Criamos logótipo, paleta e manual de marca que traduzem o carácter da sua organização.",
+      "Reparação de todo o tipo de computadores, portáteis e periféricos, com peças testadas e garantia de serviço.",
+    deliverables: [
+      "Diagnóstico de avarias",
+      "Substituição de componentes",
+      "Recuperação de dados",
+    ],
   },
   {
-    title: "Redes & Infraestrutura",
+    slug: "redes",
+    title: "Redes com e sem fio",
     description:
-      "Instalamos e mantemos redes, servidores e e-mails corporativos com acompanhamento próximo.",
+      "Projeto, instalação e gestão de redes cabladas e Wi-Fi, com cobertura estável em todo o edifício.",
+    deliverables: [
+      "Cablagem estruturada",
+      "Configuração de switches e access points",
+      "Monitorização e gestão da rede",
+    ],
   },
   {
-    title: "Segurança Informática",
+    slug: "servidores",
+    title: "Servidores e virtualização",
     description:
-      "Protegemos dados e acessos com cópias de segurança, monitorização e boas práticas aplicadas ao dia a dia.",
+      "Instalação e gestão de servidores Windows: DNS, DHCP, GPO, Active Directory, RemoteApp e virtualização.",
+    highlight: true,
+    deliverables: [
+      "Instalação de Windows Server",
+      "Active Directory e políticas de grupo",
+      "Virtualização para poupar em infraestrutura",
+    ],
   },
   {
-    title: "Suporte & Formação",
+    slug: "software",
+    title: "Instalação de software",
     description:
-      "Acompanhamos a sua equipa depois da entrega e formamos quem usa a solução todos os dias.",
+      "Instalação de sistemas operativos Windows e macOS, aplicações de produtividade e antivírus, prontos a usar.",
+    deliverables: [
+      "Sistemas operativos genuínos",
+      "Pacotes de produtividade",
+      "Antivírus e proteção de endpoints",
+    ],
   },
+  {
+    slug: "licenciamento",
+    title: "Licenciamento de software",
+    description:
+      "Chaves de activação genuínas Microsoft, Kaspersky e Veeam, com apoio na escolha do plano certo para a sua equipa.",
+    deliverables: [
+      "Licenças Microsoft 365 e Windows",
+      "Antivírus corporativo Kaspersky",
+      "Backup e recuperação com Veeam",
+    ],
+  },
+  {
+    slug: "website",
+    title: "Websites corporativos",
+    description:
+      "Criamos e mantemos sites institucionais, e-mail profissional e alojamento com o domínio da sua empresa.",
+    deliverables: ["Site institucional", "E-mail corporativo", "Domínio e alojamento"],
+  },
+  {
+    slug: "climatizacao",
+    title: "Climatização",
+    description:
+      "Fornecimento, instalação e manutenção de sistemas de ar condicionado para escritórios, salas técnicas e espaços comerciais.",
+    deliverables: [
+      "Instalação de equipamentos",
+      "Manutenção periódica",
+      "Climatização de salas de servidores",
+    ],
+  },
+];
+
+export const cloudSolutions = [
+  {
+    title: "Microsoft 365",
+    description:
+      "E-mail profissional, Teams, OneDrive e Office sempre atualizados, com gestão centralizada de utilizadores.",
+  },
+  {
+    title: "Backup e recuperação",
+    description:
+      "Cópias de segurança automáticas com Veeam e recuperação rápida em caso de falha, ataque ou erro humano.",
+  },
+  {
+    title: "Segurança de endpoints",
+    description:
+      "Proteção Kaspersky para computadores e servidores, com consola de gestão e relatórios de conformidade.",
+  },
+  {
+    title: "Servidores na nuvem",
+    description:
+      "Migramos serviços locais para a nuvem e reduzimos custos com hardware, energia e manutenção.",
+  },
+];
+
+export const differentials = [
+  {
+    title: "Comprometimento",
+    description:
+      "Cumprimos metas e prazos. Mantemos contacto próximo por telefone ou e-mail e orientamos em cada especificação.",
+  },
+  {
+    title: "Profissionalismo",
+    description:
+      "Competência, ética e padrões claros de execução em cada intervenção, do primeiro diagnóstico ao fecho.",
+  },
+  {
+    title: "Rapidez",
+    description:
+      "O seu tempo é precioso. Trabalhamos com rapidez sem abdicar de segurança nem de qualidade.",
+  },
+  {
+    title: "Sigilo profissional",
+    description:
+      "Tratamos a informação dos clientes com rigor absoluto. A privacidade é inegociável.",
+  },
+  {
+    title: "Garantia",
+    description:
+      "Oferecemos garantia sobre os serviços prestados. Não paga duas vezes pelo mesmo trabalho.",
+  },
+  {
+    title: "Parcerias fortes",
+    description:
+      "Acordos com fabricantes e distribuidores que se traduzem em melhores preços e prazos para si.",
+  },
+];
+
+export const partners = [
+  "Microsoft",
+  "Kaspersky",
+  "Veeam",
+  "HP",
+  "Lenovo",
+  "First Distribution",
+  "Dart",
+  "Stylus",
+  "Dynamics Africa",
+  "Minelab",
+  "Na Nuvem",
+  "Pensão Malépo",
+];
+
+export const stats = [
+  { value: "2018", label: "Ano de fundação" },
+  { value: "100%", label: "Capital angolano" },
+  { value: "12+", label: "Parceiros e fabricantes" },
+  { value: "24h", label: "Resposta a pedidos" },
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Escutamos",
+    title: "Diagnóstico",
     description:
-      "Reunimos consigo, mapeamos objetivos e percebemos o contexto real da organização.",
+      "Visitamos as instalações, ouvimos a equipa e levantamos o estado real dos equipamentos e da rede.",
   },
   {
     step: "02",
-    title: "Desenhamos",
+    title: "Proposta",
     description:
-      "Estruturamos a solução e validamos consigo cada ecrã antes de avançar para a construção.",
+      "Apresentamos âmbito, prazos e valores claros, com as opções de licenciamento mais vantajosas.",
   },
   {
     step: "03",
-    title: "Construímos",
+    title: "Implementação",
     description:
-      "Desenvolvemos com tecnologia atual, focados em desempenho, segurança e crescimento.",
+      "Executamos com o mínimo de interrupção à operação e documentamos tudo o que foi configurado.",
   },
   {
     step: "04",
-    title: "Crescemos juntos",
+    title: "Acompanhamento",
     description:
-      "Colocamos no ar, medimos resultados e mantemos o acompanhamento depois da entrega.",
+      "Ficamos disponíveis com help desk, manutenção preventiva e revisão periódica dos sistemas.",
   },
 ];
 
-export const stats = [
-  { value: "40+", label: "Projetos entregues" },
-  { value: "30+", label: "Organizações parceiras" },
-  { value: "6+", label: "Anos de experiência" },
-  { value: "100%", label: "Compromisso com o cliente" },
+export const clientTypes = [
+  "Escritórios e empresas",
+  "Escolas e colégios",
+  "Hotéis e pensões",
+  "Clínicas e consultórios",
+  "Comércio e retalho",
+  "Particulares",
 ];
 
-export const projects = [
-  { name: "Kianda Store", category: "E-commerce", result: "+180% em vendas online" },
-  { name: "Muxima Clinic", category: "Institucional", result: "Marcações digitais 24/7" },
-  { name: "Ngola Logistics", category: "Plataforma", result: "Rastreio em tempo real" },
-  { name: "Sanzala Media", category: "Magazine", result: "3x mais tempo em página" },
-  { name: "Kalunga Bank App", category: "App móvel", result: "Onboarding em 4 minutos" },
-  { name: "Tando Marketplace", category: "Marketplace", result: "500+ vendedores ativos" },
-];
-
-export const testimonials = [
+export const faqs = [
   {
-    quote:
-      "A Mukanda Tec entregou muito mais do que um site: entregou uma operação digital que funciona todos os dias.",
-    author: "Mariana Kiala",
-    role: "Diretora, Kianda Store",
+    question: "Que serviços de TI presta a WIN MAC em Luanda?",
+    answer:
+      "Prestamos help desk, manutenção preventiva e correctiva, instalação e gestão de redes com e sem fio, servidores Windows, instalação de software, licenciamento genuíno, websites corporativos e climatização.",
   },
   {
-    quote:
-      "Equipa técnica séria, prazos cumpridos e comunicação clara do início ao fim. Voltámos a contratar.",
-    author: "Domingos Neto",
-    role: "CEO, Ngola Logistics",
+    question: "Trabalham com contratos de assistência mensal?",
+    answer:
+      "Sim. Definimos um plano de assistência com visitas periódicas, help desk e tempos de resposta acordados, ajustado à dimensão da sua organização.",
   },
   {
-    quote:
-      "O sistema de gestão que desenvolveram poupa-nos horas por semana. O suporte responde sempre.",
-    author: "Ana Bumba",
-    role: "Gestora, Muxima Clinic",
+    question: "Fornecem licenças genuínas Microsoft e antivírus?",
+    answer:
+      "Fornecemos. Somos parceiros de fabricantes e distribuidores como Microsoft, Kaspersky, Veeam, HP e Lenovo, o que nos permite chaves genuínas e preços competitivos.",
   },
   {
-    quote:
-      "Perceberam a nossa marca melhor do que nós. A nova identidade mudou a perceção dos clientes.",
-    author: "Paulo Cardoso",
-    role: "Fundador, Sanzala Media",
+    question: "Atendem fora de Luanda?",
+    answer:
+      "A nossa base é em Talatona, Luanda, e deslocamo-nos a outras províncias mediante planeamento prévio do serviço.",
+  },
+  {
+    question: "Quanto tempo demora a receber uma proposta?",
+    answer:
+      "Respondemos a pedidos de proposta em até 24 horas úteis após o levantamento das necessidades.",
   },
 ];
 
-export const skills = [
-  { label: "Desenvolvimento web e sistemas", value: 96 },
-  { label: "Branding e identidade visual", value: 88 },
-  { label: "Redes e infraestrutura", value: 91 },
-  { label: "Segurança informática", value: 84 },
+export const contactTopics = [
+  "Tecnologias de Informação e Comunicação",
+  "Licenciamento de software",
+  "Climatização",
+  "Parcerias",
+  "Outros",
 ];
