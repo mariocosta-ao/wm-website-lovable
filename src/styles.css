@@ -5,9 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Mukanda Tec — sistema de design oficial (manual de marca).
- * 60% Noite Digital #001B5E · 30% Azul Mukanda #0049FF / Cinza #DEDEDE · 10% Laranja Ubuntu #F25623
- * Tipografia: Ubuntu (títulos) + Lato (corpo/UI). Nunca usar cores fora destes tokens.
+ * WIN MAC — Tecnologia e Comércio Geral
+ * Sistema de design: Azul Profundo (autoridade) · Azul WIN (interação) · Ciano Sinal (destaques)
  */
 
 @theme inline {
@@ -40,49 +39,49 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --font-display: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
   --radius: 0.75rem;
 
   /* Neutros */
-  --background: oklch(1 0 0); /* #FFFFFF */
-  --foreground: oklch(0.22 0 0); /* #1a1a1a */
-  --surface: oklch(0.975 0.003 265); /* #F6F7FA */
-  --surface-foreground: oklch(0.22 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.24 0.03 260);
+  --surface: oklch(0.975 0.006 250);
+  --surface-foreground: oklch(0.24 0.03 260);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0 0);
+  --card-foreground: oklch(0.24 0.03 260);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0 0);
+  --popover-foreground: oklch(0.24 0.03 260);
 
-  /* Azul Mukanda #0049FF */
-  --primary: oklch(0.5 0.267 264);
+  /* Azul WIN #0F6FC5 */
+  --primary: oklch(0.53 0.155 249);
   --primary-foreground: oklch(1 0 0);
 
-  /* Noite Digital #001B5E */
-  --night: oklch(0.27 0.152 268);
-  --night-foreground: oklch(1 0 0);
+  /* Azul Profundo #0A2540 */
+  --night: oklch(0.27 0.055 249);
+  --night-foreground: oklch(0.99 0.005 240);
 
-  --secondary: oklch(0.965 0.004 265);
-  --secondary-foreground: oklch(0.27 0.152 268);
-  --muted: oklch(0.975 0.003 265);
-  --muted-foreground: oklch(0.47 0.03 285); /* #5a5a72 */
+  --secondary: oklch(0.965 0.008 250);
+  --secondary-foreground: oklch(0.27 0.055 249);
+  --muted: oklch(0.97 0.006 250);
+  --muted-foreground: oklch(0.5 0.03 255);
 
-  /* Laranja Ubuntu #F25623 */
-  --accent: oklch(0.64 0.204 39);
-  --accent-foreground: oklch(1 0 0);
+  /* Ciano Sinal #22A9E0 */
+  --accent: oklch(0.7 0.132 232);
+  --accent-foreground: oklch(0.2 0.04 250);
 
   --destructive: oklch(0.58 0.22 27);
   --destructive-foreground: oklch(1 0 0);
 
-  --border: oklch(0.93 0.008 265); /* #E8EAF0 */
-  --input: oklch(0.93 0.008 265);
-  --ring: oklch(0.5 0.267 264);
+  --border: oklch(0.925 0.01 250);
+  --input: oklch(0.925 0.01 250);
+  --ring: oklch(0.53 0.155 249);
 
-  --shadow-ubuntu: 0 18px 40px -18px color-mix(in oklab, var(--accent) 55%, transparent);
-  --shadow-panel: 0 18px 44px -28px oklch(0.27 0.152 268 / 0.35);
+  --shadow-signal: 0 18px 40px -18px color-mix(in oklab, var(--accent) 60%, transparent);
+  --shadow-panel: 0 20px 48px -28px oklch(0.27 0.055 249 / 0.4);
 }
 
 .dark {
@@ -92,6 +91,10 @@
 @layer base {
   * {
     border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
@@ -107,31 +110,31 @@
   h4 {
     font-family: var(--font-display);
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
   ::selection {
-    background: var(--accent);
-    color: var(--accent-foreground);
+    background: var(--primary);
+    color: var(--primary-foreground);
   }
 }
 
-/* Secções de autoridade (60%) — fundo Noite Digital */
+/* Secções de autoridade — fundo Azul Profundo */
 @utility surface-night {
   background-color: var(--night);
   color: var(--night-foreground);
 }
 
-@utility bg-ubuntu {
+@utility bg-signal {
   background-color: var(--accent);
 }
 
-@utility text-ubuntu {
+@utility text-signal {
   color: var(--accent);
 }
 
-@utility shadow-ubuntu {
-  box-shadow: var(--shadow-ubuntu);
+@utility shadow-signal {
+  box-shadow: var(--shadow-signal);
 }
 
 @utility shadow-panel {
@@ -140,8 +143,8 @@
 
 @utility grid-veil {
   background-image:
-    linear-gradient(to right, color-mix(in oklab, white 14%, transparent) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in oklab, white 14%, transparent) 1px, transparent 1px);
+    linear-gradient(to right, color-mix(in oklab, white 12%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, white 12%, transparent) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent 75%);
 }
@@ -150,10 +153,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-sans);
   font-size: 0.6875rem;
-  font-weight: 900;
-  letter-spacing: 0.18em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--primary);
 }

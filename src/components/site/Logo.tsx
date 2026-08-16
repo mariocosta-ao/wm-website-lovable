@@ -1,44 +1,56 @@
 /**
- * Logótipo Mukanda Tec — três figuras interligadas formando um "M",
- * com a palavra "Mukanda" sempre por baixo do símbolo (nunca ao lado).
- * Sem sombras, brilhos, rotações ou cores fora da paleta oficial.
+ * Logótipo WIN MAC — losango duplo (símbolo) + wordmark "WIN MAC"
+ * com a assinatura "Tecnologia e Comércio Geral".
  */
 export function Logo({
-  compact = false,
   tone = "default",
+  compact = false,
 }: {
-  compact?: boolean;
   tone?: "default" | "night";
+  compact?: boolean;
 }) {
-  const wordColor = tone === "night" ? "text-night-foreground" : "text-foreground";
-  const symbolBlue = tone === "night" ? "var(--night-foreground)" : "var(--primary)";
+  const word = tone === "night" ? "text-night-foreground" : "text-night";
+  const stroke = tone === "night" ? "var(--night-foreground)" : "var(--night)";
 
   return (
-    <span className="inline-flex flex-col items-center gap-1 leading-none">
-      <svg
-        viewBox="0 0 64 44"
-        role="img"
-        aria-label="Mukanda Tec"
-        className="h-9 w-auto"
-        style={{ minHeight: 32 }}
-      >
-        <circle cx="10" cy="10" r="7" fill={symbolBlue} />
-        <circle cx="32" cy="17" r="7" fill="var(--accent)" />
-        <circle cx="54" cy="10" r="7" fill={symbolBlue} />
-        <path
-          d="M10 18 L10 40 M10 18 L32 30 M32 30 L54 18 M54 18 L54 40"
+    <span className="inline-flex items-center gap-3 leading-none">
+      <svg viewBox="0 0 48 48" role="img" aria-label="WIN MAC" className="h-10 w-10 shrink-0">
+        <rect
+          x="24"
+          y="2"
+          width="31.1"
+          height="31.1"
+          rx="3"
+          transform="rotate(45 24 2)"
           fill="none"
-          stroke={symbolBlue}
-          strokeWidth="6"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          stroke={stroke}
+          strokeWidth="2.5"
+        />
+        <rect
+          x="24"
+          y="12"
+          width="17"
+          height="17"
+          rx="2"
+          transform="rotate(45 24 12)"
+          fill="var(--primary)"
         />
       </svg>
-      {compact ? null : (
-        <span className={`font-display text-sm font-bold tracking-tight ${wordColor}`}>
-          Mukanda<span className="text-ubuntu"> Tec</span>
+
+      <span className="flex flex-col gap-1">
+        <span className={`font-display text-lg font-bold tracking-tight ${word}`}>
+          WIN<span className="text-primary"> MAC</span>
         </span>
-      )}
+        {compact ? null : (
+          <span
+            className={`text-[9px] font-semibold uppercase tracking-[0.18em] ${
+              tone === "night" ? "text-night-foreground/60" : "text-muted-foreground"
+            }`}
+          >
+            Tecnologia e Comércio Geral
+          </span>
+        )}
+      </span>
     </span>
   );
 }
