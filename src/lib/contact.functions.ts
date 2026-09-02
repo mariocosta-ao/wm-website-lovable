@@ -15,11 +15,13 @@ const contactSchema = z.object({
 export const submitContact = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => contactSchema.parse(data))
   .handler(async ({ data }) => {
-    const supabase = createClient(
-      process.env["SUPABASE_URL"] ?? process.env["VITE_SUPABASE_URL"]!,
-      process.env["SUPABASE_SERVICE_ROLE_KEY"]!,
-      { auth: { persistSession: false, autoRefreshToken: false } },
-    );
+    const url = process.env["VITE_SUPABASE_URL"] ?? process.env["SUPABASE_URL"]!;
+    const key =
+      process.env["VITE_SUPABASE_PUBLISHABLE_KEY"] ?? process.env["SUPABASE_ANON_KEY"]!;
+
+    const supabase = createClient(url, key, {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
 
     const { error } = await supabase.from("contact_messages").insert({
       name: data.name,
