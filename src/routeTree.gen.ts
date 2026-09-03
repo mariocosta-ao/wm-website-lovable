@@ -13,7 +13,6 @@ import { Route as SolucoesRouteImport } from './routes/solucoes'
 import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicosRouteImport } from './routes/servicos'
-import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as ParceirosRouteImport } from './routes/parceiros'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
@@ -38,11 +37,6 @@ const ServicosRoute = ServicosRouteImport.update({
   path: '/servicos',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PortfolioRoute = PortfolioRouteImport.update({
-  id: '/portfolio',
-  path: '/portfolio',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ParceirosRoute = ParceirosRouteImport.update({
   id: '/parceiros',
   path: '/parceiros',
@@ -63,7 +57,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/parceiros': typeof ParceirosRoute
-  '/portfolio': typeof PortfolioRoute
   '/servicos': typeof ServicosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
@@ -73,7 +66,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/parceiros': typeof ParceirosRoute
-  '/portfolio': typeof PortfolioRoute
   '/servicos': typeof ServicosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
@@ -84,7 +76,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/parceiros': typeof ParceirosRoute
-  '/portfolio': typeof PortfolioRoute
   '/servicos': typeof ServicosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
@@ -96,7 +87,6 @@ export interface FileRouteTypes {
     | '/'
     | '/contacto'
     | '/parceiros'
-    | '/portfolio'
     | '/servicos'
     | '/sitemap.xml'
     | '/sobre'
@@ -106,7 +96,6 @@ export interface FileRouteTypes {
     | '/'
     | '/contacto'
     | '/parceiros'
-    | '/portfolio'
     | '/servicos'
     | '/sitemap.xml'
     | '/sobre'
@@ -116,7 +105,6 @@ export interface FileRouteTypes {
     | '/'
     | '/contacto'
     | '/parceiros'
-    | '/portfolio'
     | '/servicos'
     | '/sitemap.xml'
     | '/sobre'
@@ -127,7 +115,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactoRoute: typeof ContactoRoute
   ParceirosRoute: typeof ParceirosRoute
-  PortfolioRoute: typeof PortfolioRoute
   ServicosRoute: typeof ServicosRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SobreRoute: typeof SobreRoute
@@ -164,13 +151,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicosRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/portfolio': {
-      id: '/portfolio'
-      path: '/portfolio'
-      fullPath: '/portfolio'
-      preLoaderRoute: typeof PortfolioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/parceiros': {
       id: '/parceiros'
       path: '/parceiros'
@@ -199,7 +179,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactoRoute: ContactoRoute,
   ParceirosRoute: ParceirosRoute,
-  PortfolioRoute: PortfolioRoute,
   ServicosRoute: ServicosRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SobreRoute: SobreRoute,
