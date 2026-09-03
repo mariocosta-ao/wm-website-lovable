@@ -9,13 +9,19 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SolucoesRouteImport } from './routes/solucoes'
 import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicosRouteImport } from './routes/servicos'
-import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as ParceirosRouteImport } from './routes/parceiros'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SolucoesRoute = SolucoesRouteImport.update({
+  id: '/solucoes',
+  path: '/solucoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
@@ -31,9 +37,9 @@ const ServicosRoute = ServicosRouteImport.update({
   path: '/servicos',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PortfolioRoute = PortfolioRouteImport.update({
-  id: '/portfolio',
-  path: '/portfolio',
+const ParceirosRoute = ParceirosRouteImport.update({
+  id: '/parceiros',
+  path: '/parceiros',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactoRoute = ContactoRouteImport.update({
@@ -50,60 +56,80 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
-  '/portfolio': typeof PortfolioRoute
+  '/parceiros': typeof ParceirosRoute
   '/servicos': typeof ServicosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
+  '/solucoes': typeof SolucoesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
-  '/portfolio': typeof PortfolioRoute
+  '/parceiros': typeof ParceirosRoute
   '/servicos': typeof ServicosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
+  '/solucoes': typeof SolucoesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
-  '/portfolio': typeof PortfolioRoute
+  '/parceiros': typeof ParceirosRoute
   '/servicos': typeof ServicosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
+  '/solucoes': typeof SolucoesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/contacto'
-    | '/portfolio'
+    | '/parceiros'
     | '/servicos'
     | '/sitemap.xml'
     | '/sobre'
+    | '/solucoes'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contacto' | '/portfolio' | '/servicos' | '/sitemap.xml' | '/sobre'
+  to:
+    | '/'
+    | '/contacto'
+    | '/parceiros'
+    | '/servicos'
+    | '/sitemap.xml'
+    | '/sobre'
+    | '/solucoes'
   id:
     | '__root__'
     | '/'
     | '/contacto'
-    | '/portfolio'
+    | '/parceiros'
     | '/servicos'
     | '/sitemap.xml'
     | '/sobre'
+    | '/solucoes'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactoRoute: typeof ContactoRoute
-  PortfolioRoute: typeof PortfolioRoute
+  ParceirosRoute: typeof ParceirosRoute
   ServicosRoute: typeof ServicosRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SobreRoute: typeof SobreRoute
+  SolucoesRoute: typeof SolucoesRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/solucoes': {
+      id: '/solucoes'
+      path: '/solucoes'
+      fullPath: '/solucoes'
+      preLoaderRoute: typeof SolucoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sobre': {
       id: '/sobre'
       path: '/sobre'
@@ -125,11 +151,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicosRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/portfolio': {
-      id: '/portfolio'
-      path: '/portfolio'
-      fullPath: '/portfolio'
-      preLoaderRoute: typeof PortfolioRouteImport
+    '/parceiros': {
+      id: '/parceiros'
+      path: '/parceiros'
+      fullPath: '/parceiros'
+      preLoaderRoute: typeof ParceirosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacto': {
@@ -152,10 +178,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactoRoute: ContactoRoute,
-  PortfolioRoute: PortfolioRoute,
+  ParceirosRoute: ParceirosRoute,
   ServicosRoute: ServicosRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SobreRoute: SobreRoute,
+  SolucoesRoute: SolucoesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

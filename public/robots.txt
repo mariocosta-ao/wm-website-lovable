@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://win-mac.net/sitemap.xml

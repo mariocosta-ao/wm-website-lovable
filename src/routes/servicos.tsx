@@ -1,37 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { Section, SectionHeading } from "@/components/site/Section";
 import { CtaBand } from "@/components/site/CtaBand";
-import { services, processSteps } from "@/lib/site";
+import { services } from "@/lib/site";
+
+const title = "Serviços de TI e climatização — WIN MAC Luanda";
+const description =
+  "Help desk, manutenção preventiva e correctiva, redes com e sem fio, servidores Windows, licenciamento genuíno, websites e climatização para empresas em Luanda.";
 
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — Mukanda Tec | Web, Software e Apps em Angola" },
-      {
-        name: "description",
-        content:
-          "Desenvolvimento web, software à medida, apps móveis, identidade visual, cloud e marketing digital para empresas em Angola.",
-      },
-      { property: "og:title", content: "Serviços — Mukanda Tec" },
-      {
-        property: "og:description",
-        content:
-          "Do desenvolvimento web ao software à medida: conheça as soluções da Mukanda Tec para o seu negócio.",
-      },
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://win-mac.net/servicos" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://win-mac.net/servicos" }],
   }),
   component: ServicosPage,
 });
-
-const deliverables = [
-  "Levantamento de requisitos e proposta detalhada",
-  "Design responsivo validado antes do desenvolvimento",
-  "Código próprio, sem dependências desnecessárias",
-  "Otimização de performance e SEO técnico",
-  "Formação da equipa e documentação de utilização",
-  "Suporte e manutenção após o lançamento",
-];
 
 function ServicosPage() {
   return (
@@ -39,60 +30,29 @@ function ServicosPage() {
       <Section className="pt-16">
         <SectionHeading
           eyebrow="Serviços"
-          title="Tudo o que o seu negócio precisa para operar no digital"
-          description="Trabalhamos como equipa técnica externa: entendemos o problema, propomos a solução certa e ficamos responsáveis pelo resultado."
+          title="Soluções de TI para manter o seu negócio a funcionar"
+          description="Economize em infraestrutura, ganhe estabilidade e conte com uma equipa disponível quando precisa."
         />
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+        <div className="mt-14 grid gap-5 md:grid-cols-2">
           {services.map((service) => (
             <article
-              key={service.title}
-              className="rounded-2xl border border-border bg-card p-7 transition-all hover:-translate-y-1 hover:border-primary/60"
+              key={service.slug}
+              className="rounded-2xl border border-border bg-card p-7 transition-colors hover:border-primary/60"
             >
-              <h2 className="text-lg font-semibold">{service.title}</h2>
+              <h2 className="text-xl font-semibold">{service.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {service.description}
               </p>
+              <ul className="mt-5 space-y-2">
+                {service.deliverables.map((d) => (
+                  <li key={d} className="flex items-start gap-2.5 text-sm">
+                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                    {d}
+                  </li>
+                ))}
+              </ul>
             </article>
-          ))}
-        </div>
-      </Section>
-
-      <Section className="bg-surface/40">
-        <div className="grid gap-12 lg:grid-cols-2">
-          <SectionHeading
-            align="left"
-            eyebrow="Incluído em cada projeto"
-            title="O que entregamos sempre"
-            description="Independentemente do tamanho do projeto, estes pontos fazem parte do nosso padrão de trabalho."
-          />
-          <ul className="space-y-4">
-            {deliverables.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                <span className="mt-0.5 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/15">
-                  <Check className="size-3 text-primary" />
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Section>
-
-      <Section>
-        <SectionHeading
-          eyebrow="Metodologia"
-          title="Como um projeto avança connosco"
-        />
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {processSteps.map((step) => (
-            <div key={step.step} className="rounded-2xl border border-border bg-card p-7">
-              <span className="font-display text-4xl font-bold text-primary/30">{step.step}</span>
-              <h3 className="mt-4 text-lg font-semibold">{step.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {step.description}
-              </p>
-              <ArrowUpRight className="mt-5 size-4 text-primary" />
-            </div>
           ))}
         </div>
       </Section>
