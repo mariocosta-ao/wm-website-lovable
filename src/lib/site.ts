@@ -16,7 +16,9 @@ export const site = {
   facebook: "https://www.facebook.com/winmac.lda/",
   instagram: "https://www.instagram.com/winmac.lda/",
   founded: "2018",
+  hours: "Segunda a sexta, 08h00 — 17h00",
   url: "https://win-mac.net",
+
 };
 
 export const services = [
@@ -121,26 +123,51 @@ export const services = [
 
 export const cloudSolutions = [
   {
+    vendor: "Microsoft",
     title: "Microsoft 365",
     description:
       "E-mail profissional, Teams, OneDrive e Office sempre atualizados, com gestão centralizada de utilizadores.",
+    benefits: [
+      "Licenças genuínas por utilizador",
+      "Migração de e-mail sem perda de dados",
+      "Gestão de contas e permissões",
+    ],
   },
   {
+    vendor: "Veeam",
     title: "Backup e recuperação",
     description:
-      "Cópias de segurança automáticas com Veeam e recuperação rápida em caso de falha, ataque ou erro humano.",
+      "Cópias de segurança automáticas e recuperação rápida em caso de falha, ataque ou erro humano.",
+    benefits: [
+      "Backup local e na nuvem",
+      "Testes periódicos de restauro",
+      "Plano de recuperação documentado",
+    ],
   },
   {
+    vendor: "Kaspersky",
     title: "Segurança de endpoints",
     description:
-      "Proteção Kaspersky para computadores e servidores, com consola de gestão e relatórios de conformidade.",
+      "Proteção para computadores e servidores, com consola de gestão e relatórios de conformidade.",
+    benefits: [
+      "Antivírus corporativo gerido",
+      "Políticas de segurança por equipa",
+      "Relatórios mensais de ameaças",
+    ],
   },
   {
-    title: "Servidores na nuvem",
+    vendor: "WIN MAC",
+    title: "Servidores e infraestrutura na nuvem",
     description:
       "Migramos serviços locais para a nuvem e reduzimos custos com hardware, energia e manutenção.",
+    benefits: [
+      "Análise de custos antes da migração",
+      "Acesso remoto seguro à equipa",
+      "Monitorização e suporte contínuo",
+    ],
   },
 ];
+
 
 export const differentials = [
   {
