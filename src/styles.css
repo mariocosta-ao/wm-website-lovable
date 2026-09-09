@@ -6,7 +6,7 @@
 
 /*
  * WIN MAC — Tecnologia e Comércio Geral
- * Sistema de design: Azul Profundo (autoridade) · Azul WIN (interação) · Ciano Sinal (destaques)
+ * Sistema de design oficial: Azul Principal · Azul Claro · Azul Elétrico · Cinza Claro
  */
 
 @theme inline {
@@ -39,8 +39,8 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -48,40 +48,40 @@
 
   /* Neutros */
   --background: oklch(1 0 0);
-  --foreground: oklch(0.24 0.03 260);
-  --surface: oklch(0.975 0.006 250);
-  --surface-foreground: oklch(0.24 0.03 260);
+  --foreground: oklch(0.217787 0 89.876);
+  --surface: oklch(0.976225 0.004127 271.37);
+  --surface-foreground: oklch(0.217787 0 89.876);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.03 260);
+  --card-foreground: oklch(0.217787 0 89.876);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.03 260);
+  --popover-foreground: oklch(0.217787 0 89.876);
 
-  /* Azul WIN #0F6FC5 */
-  --primary: oklch(0.53 0.155 249);
+  /* Azul Claro #0B67CA — ação e interação */
+  --primary: oklch(0.52375 0.172257 255.869);
   --primary-foreground: oklch(1 0 0);
 
-  /* Azul Profundo #0A2540 */
-  --night: oklch(0.27 0.055 249);
-  --night-foreground: oklch(0.99 0.005 240);
+  /* Azul Principal #003366 — autoridade e profundidade */
+  --night: oklch(0.323338 0.102544 253.885);
+  --night-foreground: oklch(1 0 89.876);
 
-  --secondary: oklch(0.965 0.008 250);
-  --secondary-foreground: oklch(0.27 0.055 249);
-  --muted: oklch(0.97 0.006 250);
-  --muted-foreground: oklch(0.5 0.03 255);
+  --secondary: oklch(0.937243 0.008351 271.325);
+  --secondary-foreground: oklch(0.323338 0.102544 253.885);
+  --muted: oklch(0.976225 0.004127 271.37);
+  --muted-foreground: oklch(0.476839 0.038446 284.849);
 
-  /* Ciano Sinal #22A9E0 */
-  --accent: oklch(0.7 0.132 232);
-  --accent-foreground: oklch(0.2 0.04 250);
+  /* Azul Elétrico #30D4F9 — destaques e energia */
+  --accent: oklch(0.805745 0.135611 217.691);
+  --accent-foreground: oklch(0.217787 0 89.876);
 
   --destructive: oklch(0.58 0.22 27);
   --destructive-foreground: oklch(1 0 0);
 
-  --border: oklch(0.925 0.01 250);
-  --input: oklch(0.925 0.01 250);
-  --ring: oklch(0.53 0.155 249);
+  --border: oklch(0.900601 0 89.876);
+  --input: oklch(0.900601 0 89.876);
+  --ring: oklch(0.52375 0.172257 255.869);
 
   --shadow-signal: 0 18px 40px -18px color-mix(in oklab, var(--accent) 60%, transparent);
-  --shadow-panel: 0 20px 48px -28px oklch(0.27 0.055 249 / 0.4);
+  --shadow-panel: 0 20px 48px -28px oklch(0.323338 0.102544 253.885 / 0.4);
 }
 
 .dark {
@@ -110,7 +110,7 @@
   h4 {
     font-family: var(--font-display);
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
   }
 
   ::selection {
