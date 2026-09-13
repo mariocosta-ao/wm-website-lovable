@@ -82,11 +82,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "WIN MAC — Tecnologia e Comércio Geral" },
+      { title: "WIN MAC Angola — Tecnologia com Propósito" },
       {
         name: "description",
         content:
-          "Empresa angolana de TI em Talatona, Luanda: suporte técnico, redes, servidores, licenciamento genuíno e climatização.",
+          "Soluções tecnológicas integradas para empresas angolanas: automação, branding, redes sociais, infraestrutura, CCTV e helpdesk.",
       },
       { name: "author", content: "WIN MAC" },
       { name: "robots", content: "index, follow" },
@@ -107,7 +107,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@500;600;700;800;900&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
     scripts: [
       {
@@ -119,6 +119,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           url: "https://win-mac.net/",
           email: "geral@win-mac.net",
           telephone: "+244942663026",
+          slogan: "Juntos, transformamos Angola digital.",
+          sameAs: ["https://www.facebook.com/winmac.lda/", "https://www.instagram.com/winmac.lda/"],
         }),
       },
     ],

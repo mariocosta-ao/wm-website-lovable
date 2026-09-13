@@ -12,16 +12,16 @@ export function Hero() {
         <div>
           <span className="eyebrow text-night-foreground/80">
             <span className="h-px w-8 bg-accent" />
-            Soluções de TI · Luanda, Angola
+            Angola · Digital · Inovação
           </span>
 
           <h1 className="mt-5 text-4xl font-bold leading-[1.06] md:text-6xl">
-            Deixe-nos cuidar da <span className="text-signal">sua tecnologia</span>
+            Tecnologia com <span className="text-signal">propósito</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-night-foreground/80 md:text-lg">
-            Help desk, redes, servidores, licenciamento genuíno e climatização. Cuidamos da
-            infraestrutura para que a sua equipa mantenha o foco em fazer crescer o negócio.
+            Transformamos a realidade tecnológica das empresas angolanas com soluções integradas,
+            acessíveis e adaptadas ao contexto local.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
@@ -43,7 +43,7 @@ export function Hero() {
 
           <p className="mt-8 inline-flex items-center gap-2 text-sm text-night-foreground/70">
             <ShieldCheck className="size-4 text-accent" />
-            Parceiros Microsoft, Kaspersky, Veeam, HP e Lenovo
+            {site.slogan}
           </p>
         </div>
 

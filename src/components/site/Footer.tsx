@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram } from "lucide-react";
-import { cloudSolutions, site, services } from "@/lib/site";
+import { brandServices, site } from "@/lib/site";
 import { Logo } from "./Logo";
 
 export function Footer() {
@@ -10,9 +10,10 @@ export function Footer() {
         <div>
           <Logo tone="night" />
           <p className="mt-7 max-w-sm text-sm leading-6 text-night-foreground/80">
-            Ajudamos empresas a proteger, organizar e modernizar a sua tecnologia. Integramos TIC,
-            software e climatização para manter cada operação segura e eficiente.
+            Somos a parceira estratégica das empresas angolanas que querem crescer com tecnologia.
+            Integramos infraestrutura, segurança, automação e comunicação numa só visão.
           </p>
+          <p className="mt-4 font-display text-sm font-bold text-accent">{site.slogan}</p>
           <div className="mt-7 flex gap-2.5">
             <a
               href={site.facebook}
@@ -38,10 +39,10 @@ export function Footer() {
         <div>
           <h3 className="text-lg font-bold text-night-foreground">Serviços</h3>
           <ul className="mt-5 space-y-3 text-sm text-night-foreground/80">
-            {services.slice(0, 8).map((s) => (
+            {brandServices.map((s) => (
               <li key={s.slug} className="flex items-start gap-2.5">
                 <span className="mt-2 size-1.5 shrink-0 rotate-45 bg-accent" aria-hidden="true" />
-                <Link to="/servicos" className="leading-5 transition-colors hover:text-accent">
+                <Link to="/solucoes/$slug" params={{ slug: s.slug }} className="leading-5 transition-colors hover:text-accent">
                   {s.title}
                 </Link>
               </li>
@@ -71,14 +72,12 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-lg font-bold text-night-foreground">Soluções</h3>
+          <h3 className="text-lg font-bold text-night-foreground">Contactos</h3>
           <ul className="mt-5 space-y-3 text-sm text-night-foreground/80">
-            {cloudSolutions.map((solution) => (
-              <li key={solution.title} className="flex items-start gap-2.5">
+            {[site.phone, site.phoneAlt, site.email, "Talatona, Luanda"].map((contact) => (
+              <li key={contact} className="flex items-start gap-2.5">
                 <span className="mt-2 size-1.5 shrink-0 rotate-45 bg-accent" aria-hidden="true" />
-                <Link to="/solucoes" className="leading-5 transition-colors hover:text-accent">
-                  {solution.title}
-                </Link>
+                <span className="leading-5">{contact}</span>
               </li>
             ))}
           </ul>
@@ -88,7 +87,7 @@ export function Footer() {
       <div className="border-t border-night-foreground/15">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-night-foreground/65 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} WIN MAC. Todos os direitos reservados.</p>
-          <p>Tecnologia e Comércio Geral · Luanda, Angola</p>
+          <p>{site.slogan} · Luanda, Angola</p>
         </div>
       </div>
     </footer>
